@@ -35,7 +35,8 @@
       </form>
 
       <div class="dropdown dropdown-mega d-none d-lg-block me-2" ngbDropdown>
-        <button type="button" class="btn header-item" ngbDropdownToggle>
+        <!-- HorizontalTopbarMegaMenuDropdownToggle -->
+        <button style="display: none" type="button" class="btn header-item" ngbDropdownToggle>
           {{ 'HEADER.MEGA_MENU' | translate}}
           <i class="mdi mdi-chevron-down"></i>
         </button>
@@ -187,7 +188,8 @@
       </div>
 
       <div class="dropdown d-inline-block" ngbDropdown>
-        <button type="button" class="btn header-item" id="page-header-user-dropdown" ngbDropdownToggle>
+        <!-- HorizontalTopbarLanguageDropdownToggle -->
+        <button style="display: none" type="button" class="btn header-item" id="page-header-user-dropdown" ngbDropdownToggle>
           <img *ngIf="flagvalue !== undefined" src="{{flagvalue}}" alt="Header Language" height="16"> <span
             class="ms-1">{{countryName}}</span>
           <img *ngIf="flagvalue === undefined" src="{{valueset}}" alt="Header Language" height="16">
@@ -205,7 +207,8 @@
       </div>
 
       <div class="dropdown d-none d-lg-inline-block me-1" ngbDropdown>
-        <button type="button" class="btn header-item noti-icon" ngbDropdownToggle>
+         <!-- HorizontalTopbarResourceLinksToggle -->
+        <button style="display: none;" type="button" class="btn header-item noti-icon" ngbDropdownToggle>
           <i class="bx bx-customize"></i>
         </button>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end" ngbDropdownMenu>
@@ -256,13 +259,15 @@
       </div>
 
       <div class="dropdown d-none d-lg-inline-block me-1">
-        <button type="button" class="btn header-item noti-icon" data-toggle="fullscreen" (click)="fullscreen()">
+        <!-- HorizontalTopbarFullscreenToggle -->
+        <button style="display: none" type="button" class="btn header-item noti-icon" data-toggle="fullscreen" (click)="fullscreen()">
           <i class="bx bx-fullscreen"></i>
         </button>
       </div>
 
       <div class="dropdown d-inline-block" ngbDropdown>
-        <button type="button" class="btn header-item noti-icon" id="page-header-notifications-dropdown"
+        <!-- HorizontalTopbarNotificationsDropdownToggle -->
+        <button style="display: none" type="button" class="btn header-item noti-icon" id="page-header-notifications-dropdown"
           ngbDropdownToggle>
           <i class="bx bx-bell bx-tada"></i>
           <span class="badge bg-danger rounded-pill">3</span>
@@ -376,7 +381,7 @@
 
       <div class="dropdown d-inline-block">
         <button type="button" class="btn header-item noti-icon right-bar-toggle" (click)="onSettingsButtonClicked()">
-          <i class="bx bx-cog bx-spin"></i>
+          <i class="bx bx-cog"></i>
         </button>
       </div>
     </div>
@@ -416,7 +421,7 @@
                       <div class="col-lg-4"><a class="dropdown-item side-nav-link-ref" routerLinkActive="active" [routerLink]="item.subItems[i + 2]?.link">{{item.subItems[i + 2]?.label | translate}}</a></div>
                   </div>
               </div>
-              
+
                 <div class="dropdown" *ngIf="hasItems(subitem)">
                   <a class="dropdown-item dropdown-toggle" href="javascript: void(0);"
                     (click)="onMenuClick($event)">{{ subitem.label | translate }}

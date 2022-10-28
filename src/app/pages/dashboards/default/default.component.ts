@@ -20,6 +20,6 @@ export class DefaultComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.breadCrumbItems = [{ label: 'Utility' }, { label: 'Starter Page', active: true }];
+    // this.breadCrumbItems = [{ label: 'Utility' }, { label: 'Dashboard', active: true }];
   }
 }
