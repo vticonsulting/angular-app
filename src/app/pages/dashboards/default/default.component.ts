@@ -54,7 +54,7 @@ export class DefaultComponent implements OnInit {
 
   ngAfterViewInit() {
     setTimeout(() => {
-      this.openModal();
+      // this.openModal();
     }, 2000);
   }
 

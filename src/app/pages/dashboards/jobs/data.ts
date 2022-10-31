@@ -249,7 +249,7 @@ const emailSentBarChart: ChartType = {
     stroke: {
         width: [0, 0, 2, 2],
         curve: 'smooth'
-    }, 
+    },
     plotOptions: {
         bar: {
             columnWidth: '30%'

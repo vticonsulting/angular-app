@@ -26,7 +26,7 @@ const JobApplydata = [
     {
       id: 4,
       title : "HTML Developer",
-      company : "Skote Technology pvt.Ltd",
+      company : "Exemplar Technology pvt.Ltd",
       type : "Full Time",
       date : "02 June 2021",
       status : "Active",
@@ -80,6 +80,5 @@ const JobApplydata = [
       status : "Active",
     },
   ];
-  
+
   export { JobApplydata };
-  

@@ -1,5 +1,5 @@
 :root {
-    //topbar 
+    //topbar
     --#{$prefix}heading-bg:              #{$white};
     --#{$prefix}topbar-search-bg:        #f3f3f9;
     --#{$prefix}header-item-color:       #555b6d;
@@ -9,7 +9,8 @@
 
     --#{$prefix}topnav-bg:               #{$white};
     --#{$prefix}menu-item-color:         #545a6d;
-    --#{$prefix}heading-dark-bg:          #2a3042;
+    --#{$prefix}heading-dark-bg:          #2c4464;
+
 
     --#{$prefix}input-border-color:             #{$gray-400};
     --#{$prefix}input-focus-border-color:       #{darken($gray-400, 10%)};
